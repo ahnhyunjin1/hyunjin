@@ -7,6 +7,13 @@ function scrollHandler() {
     } else {
         $('.menu-right button').css('color', 'white');
     }
+
+    //세션당 애니메이션 적용
+    $('section').each(function () {
+        if ($(window).scrollTop() >= $(this).position().top) {
+            $(this).find('.vertical-center').animate({ top: '0', opacity: '1' }, 800);
+        }
+    });
 }
 
 $(window).on('scroll', scrollHandler);
@@ -23,3 +30,5 @@ $('.menu-right button').on('click', function () {
         $('html, body').animate({ scrollTop: $('.contact').position().top }, 1000);
     }
 });
+
+$('.vertical-center').animate({ top: '0', opacity: '1' }, 1000);
