@@ -17,7 +17,7 @@ ul{list-style:none;}
 .typing ul li.on {  
   display: inline-block; 
   animation-name: cursor; 
-  animation-duration: 0.3s; 
+  animation-duration: 0.4s; 
   animation-iteration-count: infinite; 
 } 
 @keyframes cursor{ 
@@ -27,6 +27,7 @@ ul{list-style:none;}
 }
 
 .header .typing {
+  /* position: absolute; */
   font-size: 30px;
   font-weight: bold;
   color: #fff;
@@ -83,6 +84,7 @@ ul{list-style:none;}
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+  padding-top: 50px;
 }
 
 .vertical-center {
@@ -92,12 +94,19 @@ ul{list-style:none;}
   opacity: 0;
   position: relative;
   top: 100px;
+  margin-top: 15vw;
 }
 
 /* header */
+/* .header .container .bg-video{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+} */
 
 .header {
-  background-image: url('../images/hero_background.jpg');
+  background-image: url(../images/hero_background.jpg);
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -214,6 +223,7 @@ ul{list-style:none;}
   text-align: center;
 }
 .ability h2 {
+  position: relative;
   font-size: 30px;
   color: #4a4a4a;
   margin: 0;
@@ -267,11 +277,11 @@ ul{list-style:none;}
 /* contact */
 
 .contact {
-  height: 100vh;
+  
   min-height: 600px;
   background-color: #fff;
   text-align: center;
-  margin-top: 20vw;
+  
 }
 
 .contact h3 {
