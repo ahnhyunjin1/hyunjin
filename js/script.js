@@ -93,3 +93,14 @@ function typing() {
         }
     }
 }
+
+
+
+// $(window).on('scroll', function () {
+//     $('.top').css('opacity', 1 - $(window).scrollTop() / $('.top').height());
+// })
+
+$('.go-to-top').on('click', function () {
+    // $(window).scrollTop(0);
+    $('html, body').animate({ scrollTop: 0 }, 500);
+})
