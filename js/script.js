@@ -96,11 +96,20 @@ function typing() {
 
 
 
-// $(window).on('scroll', function () {
-//     $('.top').css('opacity', 1 - $(window).scrollTop() / $('.top').height());
-// })
 
-$('.go-to-top').on('click', function () {
-    // $(window).scrollTop(0);
-    $('html, body').animate({ scrollTop: 0 }, 500);
-})
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            $('#MOVE_TOP_BTN').fadeIn();
+        } else {
+            $('#MOVE_TOP_BTN').fadeOut();
+        }
+    });
+
+    $("#MOVE_TOP_BTN").click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+});
