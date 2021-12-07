@@ -274,6 +274,32 @@ ul{list-style:none;}
   top: 0;
 }
 
+/* project */
+.project h3 {
+  font-size: 40px;
+  color: #4a4a4a;
+  margin: 0;
+  margin-bottom: 37px;
+  padding-top: 15px;
+  text-align: center;
+}
+.project p {
+  font-size: 16px;
+  color: #4a4a4a;
+  margin: 0;
+  margin-bottom: 61px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 /* contact */
 
 .contact {
@@ -328,15 +354,17 @@ ul{list-style:none;}
 }
 
 
-#go-top {
-  display: none;
+a#MOVE_TOP_BTN {
   position: fixed;
-  right: 30px;
+  right: 2%;
   bottom: 50px;
-  outline: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  z-index: 9999;
-  color: #3F51B5; /* 색상변경*/
+  display: block;
+  z-index: 999;
 }
+
+a#MOVE_TOP_BTN .gotop {
+  width: 40px;
+  height: 55px;
+}
+
+
