@@ -20,8 +20,10 @@ $(window).on("scroll", scrollHandler),
         var t = $(this).attr("id");
         "about-btn" == t ? $("html, body").animate({
             scrollTop: $(".about").position().top
-        }, 1e3) : "contact-btn" == t && $("html, body").animate({
+        }, 1e3) : "contact-btn" == t ? $("html, body").animate({
             scrollTop: $(".contact").position().top
+        }, 1e3) : "project-btn" == t && $("html, body").animate({
+            scrollTop: $(".project").position().top
         }, 1e3)
     });
 
