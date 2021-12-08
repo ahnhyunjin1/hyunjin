@@ -74,7 +74,7 @@ ul{list-style:none;}
   cursor: pointer;
 }
 
-.navbar .menu-right li:last-child {
+.navbar .menu-right li {
   margin-left: 30px;
 }
 
@@ -94,7 +94,7 @@ ul{list-style:none;}
   opacity: 0;
   position: relative;
   top: 100px;
-  margin-top: 15vw;
+  margin-top: 10vw;
 }
 
 /* header */
@@ -296,11 +296,23 @@ ul{list-style:none;}
   position: relative;
   padding-bottom: 8vw;
 }
-
-.container .img {
-  background-image: url(../images/wooribank.png) no-repeat ;z-index: 1;
-  background-position: center center;
-  z-index: 0;
+.container .part-container{
+  width: 500px;
+  height: 400px;
+  background-image: url(../images/PCimages.png);
+  margin-left: 36.5%;
+  margin-right: 35%;
+}
+.container .part-container2{
+  width: 433px;
+  height: 250px;
+  margin-left: 8%;
+  margin-right: 35%;
+  padding-top: 33px;
+}
+.container .part-container2 img{
+  width: 433px;
+  height: 242px;
 }
 .btn{
   margin: 0 auto;
@@ -317,6 +329,7 @@ ul{list-style:none;}
   padding: 8px 20px;
   width: 100px;
   text-align: center;
+  text-decoration-line: none;
 }
 
 
@@ -327,7 +340,7 @@ ul{list-style:none;}
 
 .contact {
   
-  min-height: 600px;
+  min-height: 400px;
   background-color: #fff;
   text-align: center;
   
