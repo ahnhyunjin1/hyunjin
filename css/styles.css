@@ -291,10 +291,33 @@ ul{list-style:none;}
   text-align: center;
 }
 
+.container {
+  text-align: center;
+  position: relative;
+  padding-bottom: 8vw;
+}
 
-
-
-
+.container .img {
+  background-image: url(../images/wooribank.png) no-repeat ;z-index: 1;
+  background-position: center center;
+  z-index: 0;
+}
+.btn{
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.btn ul{
+  overflow: hidden;
+}
+.btn ul .button a{
+  display: inline-block;
+  color: #D13F31;
+  font-size: 0.8vw;
+  border: 1px solid #D13F31;
+  padding: 8px 20px;
+  width: 100px;
+  text-align: center;
+}
 
 
 
