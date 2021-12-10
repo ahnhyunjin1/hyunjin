@@ -7,6 +7,9 @@ function scrollHandler() {
                 width: o
             }, 1200)
         })) : $(".menu-right button").css("color", "white"),
+
+
+        //스크롤이 세션보다 아래있으면 vertical-center animate
         $("section").each(function () {
             $(window).scrollTop() >= $(this).position().top && $(this).find(".vertical-center").animate({
                 top: "0",
@@ -14,18 +17,22 @@ function scrollHandler() {
             }, 800)
         })
 }
-$(window).on("scroll", scrollHandler),
-    scrollHandler(),
-    $(".menu-right button").on("click", function () {
-        var t = $(this).attr("id");
-        "about-btn" == t ? $("html, body").animate({
-            scrollTop: $(".about").position().top
-        }, 1e3) : "contact-btn" == t ? $("html, body").animate({
-            scrollTop: $(".contact").position().top
-        }, 1e3) : "project-btn" == t && $("html, body").animate({
-            scrollTop: $(".project").position().top
-        }, 1e3)
-    });
+//섹션 스크롤
+$(window).on("scroll", scrollHandler);
+
+scrollHandler();
+
+$('.menu-right button').on('click', function () {
+    var id = $(this).attr('id');
+    if (id == "about-btn") {
+        $('html, body').animate({ scrollTop: $('.about').position().top }, 1000);
+    } else if (id == "project-btn") {
+        $('html, body').animate({ scrollTop: $('.project').position().top }, 1000);
+    } else if (id == "contact-btn") {
+        $('html, body').animate({ scrollTop: $('.contact').position().top }, 1000);
+    }
+});
+
 
 
 
