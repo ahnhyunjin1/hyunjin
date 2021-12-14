@@ -186,28 +186,40 @@ ul{list-style:none;}
   padding-left: 5%;
   float: left;
   box-sizing: border-box;
-  width: 40vw;
+  width: 300px;
   text-align: center;
-  padding-left: 30%;
+  padding-left: 15%;
+}
+.about .left .left-img{
+  padding-right: 20vw;
+}
+.about .left .left-img img{
+  padding-left: 100px;
+  width: 450px;
+  height: 450px;
 }
 .about .left img{
-  width: 329.39px;
+  
   height: 443.17px;
   /* margin: 5vh 0; */
-  margin-right: 10rem;
+ 
 }
 .about .right {
   margin: 0;
   margin-top: 5rem;
   padding: 0;
   float: right;
-  width: 40vw;
+  /* width: 40vw; */
   text-align: center;
-  margin-right: 12rem;
+  margin-right: 15rem;
   
 }
 .about .right .box-right{
   position: relative;
+  
+}
+.about .right .box-right .box-me{
+  margin-left: 5rem;
 }
 .about p {
   font-size: 16px;
