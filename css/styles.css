@@ -168,14 +168,14 @@ ul{list-style:none;}
 .about .right .box-right .box-content .box-content-right{
   float: right;
   font-weight: normal;
-  padding-left: 3vw;
+  padding-left: 1vw;
   letter-spacing: 0;
 }
 .about .right .box-right .box-me{
   float: right;
   text-align: center;
   position: relative;
-  
+
 }
 .about span{
   font-weight: bold;
