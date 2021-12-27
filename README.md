@@ -2,4 +2,5 @@
 
 <p> ✔️ Create from HTML , Jquery, css ,scss </p>
 <p> ✔️ netlify로 도메인 설정 </p>
-<p> ✔️ 반응형으로 업그레이드 예정 </
+<p> ✔️ 반응형으로 업그레이드 예정 </p>
+<p> ✔️ section안에 div container를 더 세분화 할 계획 </p>
